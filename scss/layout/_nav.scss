@@ -1,0 +1,128 @@
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // ustawiamy zeby nasze meny bylo zawsze nad wszystkim innym zzzz
+    z-index: 9999;
+    background-color: white;
+    padding: 12px 0;
+
+    .main-nav-holder {
+        @include flexbox;
+        justify-content: space-between;
+
+    }
+
+
+    .brand {
+        height: 50px;
+        display: inline-block;
+
+        img {
+            height: 100%;
+
+        }
+    }
+}
+
+%mobile-controls {
+    font-size: 28px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.mobile-hamburger {
+    @extend %mobile-controls;
+    color: $primary-color;
+}
+
+.mobile-close {
+    @extend %mobile-controls;
+    color: white;
+    text-align: right;
+    height: 50px;
+}
+
+.open-menu-holder {
+    // @include flexbox 
+    position: fixed;
+    background-color: $primary-color;
+    top: 0;
+    right: 0;
+    text-align: right;
+    //   Ukrywa obiekt 
+    display: none;
+    padding: 12px 23px;
+    max-width: 480px;
+    width: 480px;
+
+    &.open {
+        display: block;
+    }
+
+    .menu {
+        list-style: none;
+
+        .menu-item {
+            font-size: 50px;
+            text-transform: uppercase;
+            padding: 20px 0;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    @media all and (min-width:$large) {
+
+        .main-nav-holder {
+            justify-content: flex-start;
+        }
+
+        // wylaczamy hamburgera
+
+        %mobile-controls {
+            display: none;
+        }
+
+        .brand {
+            height: 80px;
+        }
+
+        .open-menu-holder {
+            display: block;
+            position: static;
+            background-color: transparent;
+            width: auto;
+            max-width: 100%;
+            padding: 0;
+            align-self: flex-start;
+
+            .menu {
+                background-color: white;
+
+                .menu-item {
+                    display: inline-block;
+                    margin: 0 20px;
+                    font-size: initial;
+
+                    a {
+                        color: $secondary-color;
+                        // text-decoration: none;
+                        font-weight: 700;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+
+
+
+
+}
