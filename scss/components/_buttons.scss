@@ -1,23 +1,31 @@
-
 // btn bedzie uzwywana wszedzie i bedzeimy tylko roszerzac inne elementy
 %btn {
-border-radius: 30px;
-display: inline-block;
-padding: 15px 35px;
-text-transform: uppercase;
-text-decoration: none;
-border: 0;
-color: white
-
+    border-radius: 30px;
+    display: inline-block;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0;
+    color: white
 }
 
-.btn-primary{
+.btn-primary {
     @extend %btn;
     background-color: $primary-color;
 
-    &:hover{
+
+    &:hover {
         background-color: $button-color;
 
     }
 }
-  
+
+.btn-secondary {
+    @extend %btn;
+    background-color: $button-color ;
+
+    &:hover {
+        background-color: $primary-color;
+
+    }
+}
