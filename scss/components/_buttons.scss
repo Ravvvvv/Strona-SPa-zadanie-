@@ -29,3 +29,16 @@
 
     }
 }
+
+.btn-form {
+    @extend %btn;
+    background-color: white;
+    color: $secondary-color;
+    font-weight: 700;
+
+    &:hover {
+        background-color: $button-color;
+        color: white;
+        
+    }
+}

@@ -76,10 +76,11 @@
 
     }
 
-    @media all and (min-width:$large) {
+    @media all and (min-width: $large) {
 
         .main-nav-holder {
             justify-content: flex-start;
+
         }
 
         // wylaczamy hamburgera

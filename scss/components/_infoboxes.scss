@@ -1,0 +1,121 @@
+%common-infobox {
+    padding: 0 10px;
+    margin-top: 30px;
+    text-align: center;
+
+
+}
+
+.infobox {
+    @extend%common-infobox;
+
+    .infobox-inner {
+        border: 1px solid #e2e5ea;
+        padding: 25px;
+        border-radius: 2px;
+
+        &:hover {
+            box-shadow: 0 5px 20px #f0f0f0;
+
+        }
+
+
+        .meta {
+            font-size: 12px;
+             text-transform: uppercase;
+             .category{
+                margin-right: 5px;
+                text-decoration: none;
+                // odziedzicz z gory kolor
+                color: inherit;
+             }
+             .post-date{
+                margin-right: 5px;
+                text-decoration: none;
+                // odziedzicz z gory kolor
+                color: inherit;
+
+             }
+
+        }
+
+        img {
+            width: 100%;
+
+        }
+
+
+
+        p {
+            // co robi waga tego?:>
+            font-weight: 300;
+            margin-bottom: 30px;
+
+
+        }
+    }
+}
+
+.infobox-team {
+    @extend %common-infobox;
+    margin-top: 60px;
+    position: relative;
+
+    img {
+        width: 100%;
+
+    }
+
+    .infobox-team-caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+        bottom: -50px;
+        background-color: white;
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 0 5px 20px #f0f0f0;
+            // celem ma sie zrobic maly odsstep od dna zeby ikonki mialy miejsce zeby sie rozwinac
+            padding-bottom: 30px;
+        }
+
+        &:hover .team-social-icons {
+            // podnosi inikone z dolu po najechaniu
+            height: 35px;
+        }
+
+        .team-social-icons {
+            //schowanie ikonek social (&:hover .team-social-icons spowoduje wylonienie sie)
+            height: 0;
+            overflow: hidden;
+            // oveerflow przepelnienie zapytac sie 
+            transition: all .3s;
+
+            a {
+                height: 35px;
+                width: 35px;
+                font-size: 20px;
+                display: inline-block;
+                line-height: 35px;
+                text-align: center;
+                border: 1px solid $secondary-color;
+                color: $secondary-color;
+                border-radius: 50%;
+                margin: 0 10px;
+
+                &:hover {
+                    border: 1px solid $primary-color;
+                    color: white;
+                    background-color: $primary-color;
+                    box-shadow: 0 5px 20px #f0f0f0;
+                }
+            }
+        }
+
+    }
+
+
+}

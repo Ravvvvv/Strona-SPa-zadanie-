@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project SPA</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -14,11 +15,13 @@
 
 
 
+
 </head>
 
 <body>
+
     <!-- logo po lewej stornie z napisem -->
-    <nax class="main-nav">
+    <nav class="main-nav">
         <div class="container">
             <div class="main-nav-holder">
                 <a href="" class='brand'><img src="img/logo-txt.png" alt=""></a>
@@ -38,9 +41,9 @@
                 </div>
             </div>
         </div>
-    </nax>
+    </nav>
     <div>
-
+        <i class="fa-brands fa-html5"></i>
     </div>
     <header class="main-header">
         <div class="container"></div>
@@ -77,25 +80,25 @@
 
     <section id="services" class="services">
         <div class="row">
-            <a href="" class="service col col-mb-50p col-lg-25p"> <img src="img/services-bg-1.jpg" alt="Service 1">
+            <a href="" class="service col col-md-50p col-lg-25p"> <img src="img/services-bg-1.jpg" alt="Service 1">
                 <div class="service-overlay">
                     <img src="img/icons/icon-spa.png" alt="Icon spa">
                     <h3>Body Treatment</h3>
                 </div>
             </a>
-            <a href="" class="service col col-mb-50p col-lg-25p"> <img src="img/services-bg-2.jpg" alt="Service 2">
+            <a href="" class="service col col-md-50p col-lg-25p"> <img src="img/services-bg-2.jpg" alt="Service 2">
                 <div class="service-overlay">
                     <img src="img/icons/icon-spa.png" alt="Icon spa">
                     <h3>Body Treatment</h3>
                 </div>
             </a>
-            <a href="" class="service col col-mb-50p col-lg-25p"> <img src="img/services-bg-3.jpg" alt="Service 3">
+            <a href="" class="service col col-md-50p col-lg-25p"> <img src="img/services-bg-3.jpg" alt="Service 3">
                 <div class="service-overlay">
                     <img src="img/icons/icon-spa.png" alt="Icon spa">
                     <h3>Body Treatment</h3>
                 </div>
             </a>
-            <a href="" class="service col col-mb-50p col-lg-25p"> <img src="img/services-bg-4.jpg" alt="Service 4">
+            <a href="" class="service col col-md-50p col-lg-25p"> <img src="img/services-bg-4.jpg" alt="Service 4">
                 <div class="service-overlay">
                     <img src="img/icons/icon-spa.png" alt="Icon spa">
                     <h3>Body Treatment</h3>
@@ -143,6 +146,192 @@
 
 
 
+
+    <section id="team" class="team">
+        <div class="container">
+            <header class="section-header">
+                <h2>Experienced Team</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem error corrupti numquam delectus
+                    fugit. Quam reprehenderit cumque exercitationem minus hic!</p>
+            </header>
+            <div class="row">
+                <div class="infobox-team col col-md-33p">
+                    <img src="img/team-1.jpg" alt="team-1">
+                    <div class="infobox-team-caption">
+                        <h3>Jan Jensen</h3>
+                        <p>Lorem ipsum similique?</p>
+                        <div class="team-social-icons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="infobox-team col col-md-33p">
+                    <img src="img/team-3.jpg" alt="team-3">
+                    <div class="infobox-team-caption">
+                        <h3>Karol Figaj </h3>
+                        <p>Sprzedawca Rzepy</p>
+                        <div class="team-social-icons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="infobox-team col col-md-33p">
+                    <img src="img/team-2.jpg" alt="team-2">
+                    <div class="infobox-team-caption">
+                        <h3>Karol Figaj</h3>
+                        <p>Lorem ipsum similique?</p>
+                        <div class="team-social-icons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- sekcja z zapisaniem sie  -->
+    </section>
+    <section id="appointment" class="appointment">
+        <div class="desktop-background" style="background-image: url(img/contact-bg.jpg);">
+
+        </div>
+        <form class="" id="appointment-form">
+            <input type="text" name="name" placeholder="Name" id="appointment-name" class="form-field">
+
+            <input type="email" name="email" placeholder="Email" id="email" class="form-field">
+            <select name="service" id="appointment-service" class="form-field">
+                <option value="">Select service</option>
+                <option value="normal"> Normal Service</option>
+                <option value="vip">Vip Serevice</option>
+            </select>
+
+            <input type="tel" name="phone" placeholder="Phone" id="appointment-phone" class="form-field">
+
+            <input type="date" name="date" id="appointment-date" class="form-field">
+            <input type="time" name="time" id="appointment-time" class="form-field">
+            <textarea name="message" id="appointment-message" placeholder="You notes" class=" form-field"></textarea>
+            <button type="submit" class="btn-form"> Make an Appoointment</button>
+            <p class="appointment-message"></p>
+
+        </form>
+
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <header class="section-header">
+                <h2> Latest From Blog</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, expedita.</p>
+            </header>
+
+            <div class="row">
+                <div class="infobox col  col-md-33p">
+                    <div class="infobox-inner">
+
+                        <img src="img/blog-1.jpg" alt="blog-1 ">
+                        <p class="meta"><a href="" class="category">Relaxation</a>|<a href="" class="post-date">July
+                                03,2019</a class+></p>
+                        <h3>Had seed heart grass mids</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore.</p>
+                        <a href="" class="btn-secondary">Read more</a>
+                    </div>
+                </div>
+                <div class="infobox col  col-md-33p">
+                    <div class="infobox-inner">
+
+                        <img src="img/blog-2.jpg" alt="blog-2 ">
+                        <p class="meta"><a href="" class="category">Relaxation</a>|<a href="" class="post-date">July
+                                03,2019</a class+></p>
+                        <h3>Divid image unto crepping</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore.</p>
+                        <a href="" class="btn-secondary">Read more</a>
+                    </div>
+                </div>
+                <div class="infobox col  col-md-33p">
+                    <div class="infobox-inner">
+
+                        <img src="img/blog-3.jpg" alt="blog3  ">
+                        <p class="meta"><a href="" class="category">Relaxation</a>|<a href="" class="post-date">July
+                                03,2019</a class+></p>
+                        <h3>Had seed herb grass mids</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore.</p>
+                        <a href="" class="btn-secondary">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <header class="section-header">
+                <h2> Latest From Blog</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, expedita.</p>
+            </header>
+
+            <div class="row">
+                <div class="contact-data col col-md33pp ">
+                    <div class="contact-item">
+                        <span class="img-holder">
+                            <img src="img/icons/icon-map.png" alt="map">
+                        </span>
+                        <p>Powstancow Wielkopolskich 48 <br> Sokolow, Poland</p>
+
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="img-holder">
+                            <img src="img/icons/icon-mail.png" alt="email">
+                        </span>
+                        <a href="mailto:example@wp.pl">mailto:example@wp.pl</a><br>
+                        <a href="mailto:example@wp.pl">mailto:example@wp.pl</a>
+                    </div>
+                    </p>
+
+                    <div>
+                        <div class="contact-item">
+
+
+                            <span class="img-holder"><img src="img/icons/icon-tel.png" alt="phone"></span>
+                            <p>
+                                <span>846646464649</span><br>
+                                <span>846646464649</span>
+                            </p>
+                        </div>
+                        <div class=" contact-from col col-md66pp">
+                            <form action="">
+                                <input type="text" placeholder="First name" name="name">
+                                <input type="email" placeholder="Email address" name="emial">
+                                <textarea name="" placeholder="Write message"></textarea>
+                                <button class="btn-form">Submit now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <footer class="page-footer">
+        <img src="img/logo-txt.png" alt="logo">
+
+        <nav class="footer-nav">
+            <ul class="menu">
+                <li class="menu-item"><a href="">Home</a></li>
+                <li class="menu-item"><a href="">About</a></li>
+                <li class="menu-item"><a href="">Feature</a></li>
+                <li class="menu-item"><a href="">Service</a></li>
+                <li class="menu-item"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copy">prawa prawa 2023</p>
+    </footer>
 
 
 
